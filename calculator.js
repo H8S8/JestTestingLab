@@ -27,7 +27,13 @@ function even(number){
     return false;
 };
 
-const odd = null;
+// ANONYMOUS FUNCTION
+const odd = function(a, b){
+    if(modulus(number, 2) == 1){
+        return true;
+    }
+    return false;
+};
 
 module.exports = { 
     sum, 
