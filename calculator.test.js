@@ -111,4 +111,16 @@ describe('even', () => {
 
 describe('odd', () => {
 
+  test('function works for a positive number', () => {
+    expect(odd(-5)).toBe(true);
+  })
+
+  test('function works for a negative number', () => {
+    expect(odd(6)).toBe(false);
+  })
+
+  test('function works for a decimal number', () => {
+    expect(odd(-8.2)).toBe(false);
+  })
+
 });
