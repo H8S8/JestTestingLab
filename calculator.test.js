@@ -95,6 +95,18 @@ describe('modulus', () => {
 
 describe('even', () => {
 
+  test('function works for a positive number', () => {
+    expect(false).toBe(even(5));
+  })
+
+  test('function works for a negative number', () => {
+    expect(true).toBe(even(-6));
+  })
+
+  test('function works for a decimal number', () => {
+    expect(false).toBe(even(8.2));
+  })
+
 });
 
 describe('odd', () => {
