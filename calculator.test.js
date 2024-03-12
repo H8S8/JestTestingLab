@@ -32,6 +32,18 @@ describe('sum', () => {
 
 describe('subtract', () => {
 
+  test('can subtract a large positive number from a small positive number', () => {
+    expect(-23).toBe(7, 30);
+  })
+
+  test('can subract a negative number from a positive number', () => {
+    expect(20).toBe(4, -16);
+  })
+
+  test('can subtract zero', () => {
+    expect(56).toBe(56, 0);
+  })
+
 });
 
 describe('multiply', () => {
