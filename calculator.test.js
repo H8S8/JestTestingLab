@@ -48,6 +48,22 @@ describe('subtract', () => {
 
 describe('multiply', () => {
 
+  test('can multiply two positive numbers', () => {
+    expect(56).toBe(multiply(7, 8));
+  })
+
+  test('can multiply a negative number and a positive number', () => {
+    expect(-15).toBe(multiply(3, -5));
+  })
+
+  test('can multiply two negative numbers', () => {
+    expect(81).toBe(multiply(-9, -9));
+  })
+
+  test('can multiply by zero', () => {
+    expect(0).toBe(multiply(574823957, 0));
+  })
+
 });
 
 describe('divide', () => {
