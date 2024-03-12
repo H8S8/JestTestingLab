@@ -28,7 +28,7 @@ function even(number){
 };
 
 // ANONYMOUS FUNCTION
-const odd = function(a, b){
+const odd = function(number){
     if(modulus(number, 2) == 1){
         return true;
     }

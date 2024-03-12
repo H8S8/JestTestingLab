@@ -91,6 +91,10 @@ describe('modulus', () => {
     expect(modulus(13, -2)).toBe(1);
   })
 
+  test('can get a modulo division of a negative number by a positive number', () => {
+    expect(modulus(-5, 2)).toBe(1);
+  })
+
 });
 
 describe('even', () => {
@@ -111,11 +115,11 @@ describe('even', () => {
 
 describe('odd', () => {
 
-  test('function works for a positive number', () => {
+  test('function works for a negative number', () => {
     expect(odd(-5)).toBe(true);
   })
 
-  test('function works for a negative number', () => {
+  test('function works for a positive number', () => {
     expect(odd(6)).toBe(false);
   })
 
