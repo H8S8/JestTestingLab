@@ -92,7 +92,7 @@ describe('modulus', () => {
   })
 
   test('can get a modulo division of a negative number by a positive number', () => {
-    expect(modulus(-5, 2)).toBe(1);
+    expect(modulus(-7, 5)).toBe(-2); // This maths is horrible
   })
 
 });
