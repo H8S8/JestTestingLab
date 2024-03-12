@@ -16,7 +16,8 @@ const divide = function(a, b){
     return a / b;
 };
 
-const modulus = null;
+// ARROW FUNCTION
+const modulus = (a, b) => a % b;
 
 const even = null;
 
