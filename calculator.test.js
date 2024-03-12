@@ -17,15 +17,15 @@ describe('sum', () => {
   });
 
   test('can add two large positive numbers', () => { 
-    expect(6829290000).toBe(sum(43900000, 6785390000));
+    expect(sum(43900000, 6785390000)).toBe(6829290000);
   });
 
   test('can add two negative numbers', () => {
-    expect(-71).toBe(sum(-19, -52));
+    expect(sum(-19, -52)).toBe(-71);
   });
 
   test('can add zero', () => {
-    expect(56).toBe(sum(56, 0));
+    expect(sum(56, 0)).toBe(56);
   });
 
 });
@@ -33,15 +33,15 @@ describe('sum', () => {
 describe('subtract', () => {
 
   test('can subtract a large positive number from a small positive number', () => {
-    expect(-23).toBe(subtract(7, 30));
+    expect(subtract(7, 30)).toBe(-23);
   })
 
   test('can subract a negative number from a positive number', () => {
-    expect(20).toBe(subtract(4, -16));
+    expect(subtract(4, -16)).toBe(20);
   })
 
   test('can subtract zero', () => {
-    expect(56).toBe(subtract(56, 0));
+    expect(subtract(56, 0)).toBe(56);
   })
 
 });
@@ -49,19 +49,19 @@ describe('subtract', () => {
 describe('multiply', () => {
 
   test('can multiply two positive numbers', () => {
-    expect(56).toBe(multiply(7, 8));
+    expect(multiply(7, 8)).toBe(56);
   })
 
   test('can multiply a negative number and a positive number', () => {
-    expect(-15).toBe(multiply(3, -5));
+    expect(multiply(3, -5)).toBe(-15);
   })
 
   test('can multiply two negative numbers', () => {
-    expect(81).toBe(multiply(-9, -9));
+    expect(multiply(-9, -9)).toBe(81);
   })
 
   test('can multiply by zero', () => {
-    expect(0).toBe(multiply(574823957, 0));
+    expect(multiply(574823957, 0)).toBe(0);
   })
 
 });
@@ -69,26 +69,26 @@ describe('multiply', () => {
 describe('divide', () => {
 
   test('can divide a positive number by one of its positive divisors', () => {
-    expect(5).toBe(divide(15, 3));
+    expect(divide(15, 3)).toBe(5);
   })
 
   test('can divide a positive number by one of its negative divisors', () => {
-    expect(-20).toBe(divide(40, -2));
+    expect(divide(40, -2)).toBe(-20);
   })
 
   test('can divide a negative number by a negative number, expecting a decimal', () => {
-    expect(5.5).toBe(divide(-11, -2));
+    expect(divide(-11, -2)).toBe(5.5);
   })
 });
 
 describe('modulus', () => {
 
   test('can get modulo division of a positive number by a positive number', () => {
-    expect(3).toBe(modulus(7, 4));
+    expect(modulus(7, 4)).toBe(3);
   })
 
   test('can get modulo division of a positive number by a negative number', () => {
-    expect(1).toBe(modulus(13, -2));
+    expect(modulus(13, -2)).toBe(1);
   })
 
 });
@@ -96,15 +96,15 @@ describe('modulus', () => {
 describe('even', () => {
 
   test('function works for a positive number', () => {
-    expect(false).toBe(even(5));
+    expect(even(5)).toBe(false);
   })
 
   test('function works for a negative number', () => {
-    expect(true).toBe(even(-6));
+    expect(even(-6)).toBe(true);
   })
 
   test('function works for a decimal number', () => {
-    expect(false).toBe(even(8.2));
+    expect(even(8.2)).toBe(false);
   })
 
 });
