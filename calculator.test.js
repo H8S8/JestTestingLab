@@ -28,6 +28,10 @@ describe('sum', () => {
     expect(sum(56, 0)).toBe(56);
   });
 
+  test('can add decimals', () =>{
+    expect(0.2 + 0.1).toBeCloseTo(0.3, 5);
+  })
+
 });
 
 describe('subtract', () => {
@@ -79,6 +83,18 @@ describe('divide', () => {
   test('can divide a negative number by a negative number, expecting a decimal', () => {
     expect(divide(-11, -2)).toBe(5.5);
   })
+
+  test('can do division resulting in recurring decimal', () => {
+    expect(divide(10, 3)).toBeCloseTo(3.3333333);
+  })
+
+  test('returns Infinity when dividing by zero', () => {
+    expect(divide(36, 0)).toBe(Infinity);
+  })
+
+  test('return NaN when dividing zero by zero', () => {
+    expect(divide(0, 0)).toBeNaN();
+  })
 });
 
 describe('modulus', () => {
@@ -95,6 +111,13 @@ describe('modulus', () => {
     expect(modulus(-7, 5)).toBe(-2); // This maths is horrible
   })
 
+  test('can do modulo division of zero', () => {
+    expect(modulus(0, 8)).toBe(0);
+  })
+
+  test('return NaN when doing modulo division by zero', () => {
+    expect(modulus(9, 0)).toBeNaN();
+  })
 });
 
 describe('even', () => {
@@ -111,6 +134,10 @@ describe('even', () => {
     expect(even(8.2)).toBe(false);
   })
 
+  test('function works for zero', () => {
+    expect(even(0)).toBe(true);
+  })
+
 });
 
 describe('odd', () => {
@@ -125,6 +152,10 @@ describe('odd', () => {
 
   test('function works for a decimal number', () => {
     expect(odd(8.2)).toBe(false);
+  })
+
+  test('function works for zero', () => {
+    expect(odd(0)).toBe(false);
   })
 
 });
