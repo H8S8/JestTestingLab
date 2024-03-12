@@ -19,7 +19,13 @@ const divide = function(a, b){
 // ARROW FUNCTION
 const modulus = (a, b) => a % b;
 
-const even = null;
+// NAMED FUNCTION
+function even(number){
+    if(modulus(number, 2) == 0){
+        return true;
+    }
+    return false;
+};
 
 const odd = null;
 
