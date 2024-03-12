@@ -1,8 +1,10 @@
+// ANONYMOUS FUNCTION
 const sum = function(a, b){
     return a + b;
 };
 
-const subtract = null;
+// ARROW FUNCTION
+const subtract = (a, b) => a - b;
 
 const multiply = null;
 
