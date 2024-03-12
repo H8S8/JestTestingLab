@@ -68,6 +68,17 @@ describe('multiply', () => {
 
 describe('divide', () => {
 
+  test('can divide a positive number by one of its positive divisors', () => {
+    expect(5).toBe(divide(15, 3));
+  })
+
+  test('can divide a positive number by one of its negative divisors', () => {
+    expect(-20).toBe(divide(40, -2));
+  })
+
+  test('can divide a negative number by a negative number, expecting a decimal', () => {
+    expect(5.5).toBe(divide(-11, -2));
+  })
 });
 
 describe('modulus', () => {
