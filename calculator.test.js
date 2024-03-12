@@ -83,6 +83,14 @@ describe('divide', () => {
 
 describe('modulus', () => {
 
+  test('can get modulo division of a positive number by a positive number', () => {
+    expect(3).toBe(modulus(7, 4));
+  })
+
+  test('can get modulo division of a positive number by a negative number', () => {
+    expect(1).toBe(modulus(13, -2));
+  })
+
 });
 
 describe('even', () => {
