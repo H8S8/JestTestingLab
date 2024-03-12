@@ -124,7 +124,7 @@ describe('odd', () => {
   })
 
   test('function works for a decimal number', () => {
-    expect(odd(-8.2)).toBe(false);
+    expect(odd(8.2)).toBe(false);
   })
 
 });

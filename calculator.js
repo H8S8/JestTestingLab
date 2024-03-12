@@ -21,7 +21,7 @@ const modulus = (a, b) => a % b;
 
 // NAMED FUNCTION
 function even(number){
-    if(modulus(number, 2) == 0){
+    if(Math.abs(modulus(number, 2)) == 0){
         return true;
     }
     return false;
@@ -29,7 +29,7 @@ function even(number){
 
 // ANONYMOUS FUNCTION
 const odd = function(number){
-    if(modulus(number, 2) == 1){
+    if(Math.abs(modulus(number, 2)) == 1){
         return true;
     }
     return false;
